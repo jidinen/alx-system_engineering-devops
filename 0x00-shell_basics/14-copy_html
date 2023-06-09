@@ -1,2 +1,3 @@
 #!/bin/bash
-for f in *.html do cp -nv "$f" "$parent_dir" done
+for f in *.html do [[ ! -f ../$f ]] || [[ $(stat -c %y "$f") -gt $(stat -c %y ../$f) ]] && cp -nv "$f" ../
+
