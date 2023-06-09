@@ -1,2 +1,2 @@
 #!/bin/bash
-find . .. /boot -type f -name '.*' -printf '%P\n' | ls -la
+find . .. /boot -type f -name '.*' -printf '%P\n'  ls -la
