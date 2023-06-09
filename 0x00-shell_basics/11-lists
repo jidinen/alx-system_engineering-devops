@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name '.*' -printf '%P\n' | tac | head
+find . -type f -name '.*' -printf '%P\n' | tac | head | xargs ls -l
