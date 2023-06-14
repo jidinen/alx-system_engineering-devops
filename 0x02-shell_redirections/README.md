@@ -1,1 +1,2 @@
 "hello world"
+"smiley face"
