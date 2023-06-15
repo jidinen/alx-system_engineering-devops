@@ -1,0 +1,2 @@
+#!/bin/bqsh
+echo "$1" | tr 'Ac' 'Ze'
