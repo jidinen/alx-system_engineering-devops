@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "hello, my $(whoami)"
+echo "Hello, my $USER! Current user is: $(whoami)
