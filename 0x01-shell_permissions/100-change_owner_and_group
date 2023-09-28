@@ -1,2 +1,2 @@
 #!/bin/bash
-chowni vincent, chgrp school
+chgrp school
