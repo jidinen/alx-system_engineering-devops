@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# A funtion that print Best School to the stdout using a while loop
+
+counter=1
+
+while [ $counter -le 10 ]
+do
+    echo "Best School"
+    ((counter++))
+done
