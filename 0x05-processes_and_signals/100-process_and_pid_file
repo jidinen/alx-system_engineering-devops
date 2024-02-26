@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# a script that perform a partical task base on the signal it receives
+pid=$$ 
+filename="/var/run/myscript.pid"
+SIGTERM_cleanup()
+{
+echo "I hate the kill command"
+exit 0
+}
+
+SIGINT_cleanup()
+{
+echo "Y U no love me?!"
+}
+
+SIGTERM_SIGQUIT_cleanup()
+{
+rm -f "$filename"
+exit 0
+}
+trap SIGTERM_cleanup SIGTERM
+trap SIGINT_cleanup SIGINT
+trap SIGTERM_SIGQUIT_cleanup SIGTERM SIGQUIT
+
+echo "$pid" > "$filename"
+
+while true;
+do
+    echo "To infinity and beyond"
+done
