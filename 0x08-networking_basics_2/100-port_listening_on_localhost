@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#listening for incomming
+nc -l  98
+#nc -lk localhost "$PORT"
